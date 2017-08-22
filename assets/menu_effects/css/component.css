@@ -1468,7 +1468,7 @@
 }
 
 .menu--valentine .menu__item--current .menu__link {
-	color: #d94f5c;
+	color: #fff;
 }
 
 .menu--valentine .menu__item::before,
@@ -1477,7 +1477,7 @@
 .menu--valentine .menu__link::after {
 	content: '';
 	position: absolute;
-	background: #d94f5c;
+	background: #fff;
 	-webkit-transform-origin: 350% 350%;
 	transform-origin: 350% 350%;
 	-webkit-transition: -webkit-transform 0.5s;
