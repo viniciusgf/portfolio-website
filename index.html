@@ -25,10 +25,10 @@
   <section id="header">
     <div class="container">
       <header class="menu">
-        <button id="bt-open" class="showmenu"><i class="fa fa-bars"></i></button>
-        <button id="bt-close" class="hidemenu"><i class="fa fa-times"></i></button>
+        <button id="bt-menu" class="fa fa-bars"></button>
+        <!-- <button id="bt-close" class="hidemenu"><i class="fa fa-times"></i></button> -->
         <nav class="menu menu--valentine">
-          <ul class="menu__list menucontrol hidemenu">
+          <ul id='menu-nav' class="menu__list showmenu hidemenu">
             <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
             <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
@@ -49,26 +49,20 @@
   <!-- Javascript custom -->
   <script>
     $(document).ready(function(){
-      $("#bt-open").click(function(){
-        $(".menucontrol").addClass("showmenu");
-        $(".menucontrol").removeClass("hidemenu");
-        $("#bt-open").addClass("hidemenu");
-        $("#bt-close").addClass("showmenu");
-        $("#bt-close").removeClass("hidemenu");
-        $("#bt-open").removeClass("showmenu");
-
+      $("#bt-menu").click(function(){
+        //$(".menucontrol").addClass("showmenu");
+        if ($("#menu-nav").hasClass("hidemenu")) {        
+          // if ("#bt-menu".hasClass("fa fa-bars")) {        
+          $("#menu-nav").removeClass("hidemenu");
+          $("#bt-menu").removeClass("fa fa-bars");
+          $("#bt-menu").addClass("fa fa-times");
+        } else {
+          $("#menu-nav").addClass("hidemenu");
+          $("#bt-menu").removeClass("fa fa-times");
+          $("#bt-menu").addClass("fa fa-bars");
+        }
       });
-
-      $("#bt-close").click(function(){
-        $(".menucontrol").removeClass("showmenu");
-        $(".menucontrol").addClass("hidemenu");
-        $("#bt-close").addClass("hidemenu");
-        $("#bt-open").addClass("showmenu");
-        $("#bt-open").removeClass("hidemenu");
-        $("#bt-close").removeClass("showmenu");
-      })
     });
-
   </script>
   <!-- menu_effects -->
   <script>

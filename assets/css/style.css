@@ -53,7 +53,7 @@ body{
 	display: none;
 }
 
-#bt-close,#bt-open{
+#bt-menu{
 	float: right;
 	color: #FFF;
 	background: none;
