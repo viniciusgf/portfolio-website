@@ -33,27 +33,27 @@ body{
 	float: right;
 	margin-right: 50px
 }
-.menu ul li a{
+.menu ul li a {
 	color: #FFF;
 	text-decoration: none;
 	transition: all 0.3s;
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover {
 	transition: all 0.3s;
 	opacity: 0.7;
 }
 
-.showmenu{
+.showmenu {
 	display: block;
 	transition: all 0.3s;
 
 }
-.hidemenu{
+.hidemenu {
 	display: none;
 }
 
-#bt-menu{
+#bt-menu {
 	float: right;
 	color: #FFF;
 	background: none;
@@ -62,4 +62,14 @@ body{
 	position: relative;
 	top: 23px;
 
+}
+
+.about-me {
+	font-family:  'Open Sans', sans-serif;
+}
+/*.about-me h2 {
+	font-family: 'Roboto', sans-serif
+}*/
+.about-me span {
+	font-weight: bold;
 }
