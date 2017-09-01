@@ -2,110 +2,127 @@
 <html lang="en">
 <head>
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Vinicius Gomes Portfolio">
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript, Java">
-  <meta name="author" content="Vinicius Gomes">
-  <title>Vinicius Gomes's Portfolio</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-  rel="stylesheet">
-  <!-- Menu effects -->
-  <link rel="stylesheet" type="text/css" href="assets/menu_effects/css/component.css" />
-  <!-- Bootstrap / CSS -->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Vinicius Gomes Portfolio">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript, Java">
+	<meta name="author" content="Vinicius Gomes">
+	<title>Vinicius Gomes's Portfolio</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+	rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<!-- Menu effects -->
+	<link rel="stylesheet" type="text/css" href="assets/menu_effects/css/component.css" />
+	<!-- Bootstrap / CSS -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-  <section id="header">
-    <div class="container">
-      <header class="menu">
-        <button id="bt-open" class="showmenu"><i class="fa fa-bars"></i></button>
-        <button id="bt-close" class="hidemenu"><i class="fa fa-times"></i></button>
-        <nav class="menu menu--valentine">
-          <ul class="menu__list menucontrol hidemenu">
-            <li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">About me</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
-            <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-          </ul>
-        </nav>
+	<section id="header">
+		<div class="container">
+			<header class="menu">
+				<button id="bt-menu" class="fa fa-bars"></button>
+				<!-- <button id="bt-close" class="hidemenu"><i class="fa fa-times"></i></button> -->
+				<nav class="menu menu--valentine">
+					<ul id='menu-nav' class="menu__list showmenu hidemenu">
+						<li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">About me</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+					</ul>
+				</nav>
 
-      </header>
-    </div>
-  </section>
+			</header>
+		</div>
+	</section>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script src="assets/menu_effects/js/classie.js"></script>
-  <script src="assets/menu_effects/js/clipboard.min.js"></script>
-  <!-- Javascript custom -->
-  <script>
-    $(document).ready(function(){
-      $("#bt-open").click(function(){
-        $(".menucontrol").addClass("showmenu");
-        $(".menucontrol").removeClass("hidemenu");
-        $("#bt-open").addClass("hidemenu");
-        $("#bt-close").addClass("showmenu");
-        $("#bt-close").removeClass("hidemenu");
-        $("#bt-open").removeClass("showmenu");
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="about-me text-right">
+						<h2>Vinicius <span>GOMES</span></h2>
+						<p>Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat.
+							Praesent lacinia ultrices consectetur. Sed non ipsum felis. Viva Forevis aptent taciti sociosqu ad litora torquent.
+							Delegadis gente finis, bibendum egestas augue arcu ut est. Si num tem leite então bota uma pinga aí cumpadi!</p>
+						</div>
+					</div>
 
-      });
+					<div class="col-lg-6">
+						<div class="about-me text-left">
+							<h2>About nois</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi magni cumque aliquid explicabo culpa, assumenda. Aspernatur beatae ipsum, pariatur molestias.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      $("#bt-close").click(function(){
-        $(".menucontrol").removeClass("showmenu");
-        $(".menucontrol").addClass("hidemenu");
-        $("#bt-close").addClass("hidemenu");
-        $("#bt-open").addClass("showmenu");
-        $("#bt-open").removeClass("hidemenu");
-        $("#bt-close").removeClass("showmenu");
-      })
-    });
-
-  </script>
-  <!-- menu_effects -->
-  <script>
-    (function() {
-      [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
-        var menuItems = menu.querySelectorAll('.menu__link'),
-        setCurrent = function(ev) {
-          ev.preventDefault();
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="assets/menu_effects/js/classie.js"></script>
+		<script src="assets/menu_effects/js/clipboard.min.js"></script>
+		<!-- Javascript custom -->
+		<script>
+			$(document).ready(function(){
+				$("#bt-menu").click(function(){
+					if ($("#menu-nav").hasClass("hidemenu")) {              
+						$("#menu-nav").removeClass("hidemenu");
+						$("#bt-menu").removeClass("fa fa-bars");
+						$("#bt-menu").addClass("fa fa-times");
+					} else {
+						$("#menu-nav").addClass("hidemenu");
+						$("#bt-menu").removeClass("fa fa-times");
+						$("#bt-menu").addClass("fa fa-bars");
+					}
+				});
+			});
+		</script>
+		<!-- menu_effects -->
+		<script>
+			(function() {
+				[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+					var menuItems = menu.querySelectorAll('.menu__link'),
+					setCurrent = function(ev) {
+						ev.preventDefault();
 
             var item = ev.target.parentNode; // li
 
             // return if already current
             if (classie.has(item, 'menu__item--current')) {
-              return false;
+            	return false;
             }
             // remove current
             classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
             // set current
             classie.add(item, 'menu__item--current');
-          };
+        };
 
-          [].slice.call(menuItems).forEach(function(el) {
-            el.addEventListener('click', setCurrent);
-          });
+        [].slice.call(menuItems).forEach(function(el) {
+        	el.addEventListener('click', setCurrent);
         });
+    });
 
-      [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
-        link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
-        new Clipboard(link);
-        link.addEventListener('click', function() {
-          classie.add(link, 'link-copy--animate');
-          setTimeout(function() {
-            classie.remove(link, 'link-copy--animate');
-          }, 300);
-        });
-      });
-    })(window);
-  </script>
-</body>
-</html>
+				[].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+					link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+					new Clipboard(link);
+					link.addEventListener('click', function() {
+						classie.add(link, 'link-copy--animate');
+						setTimeout(function() {
+							classie.remove(link, 'link-copy--animate');
+						}, 300);
+					});
+				});
+			})(window);
+		</script>
+	</body>
+	</html>
